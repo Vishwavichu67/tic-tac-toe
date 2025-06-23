@@ -1,0 +1,94 @@
+/* Reset and base styling */
+* {
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+/* Main heading */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #000;
+    
+}
+
+/* Game container */
+.container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    box-shadow: 0 0 20px rgb(129, 134, 134);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Game board */
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+    gap: 10px; 
+}
+
+#board button {
+    font-size: 2rem;
+    justify-content: center;
+    background-color: #222;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: #dae4db 0px 0px 10px;
+    color: white;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#board button:hover {
+    background-color: rgb(199, 219, 212);
+    color: #000;
+    transform: scale(1.1);
+}
+
+/* Action buttons */
+#reset,#newgame {
+    gap: 20px;
+    padding: 10px 20px;
+    justify-content: space-between;
+    background-color: rgb(224, 230, 226);
+    color: #000;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#reset:hover,
+#newgame:hover {
+    border-radius: 20px;
+    background-color: #fefefe;
+    color: #0c0c0c;
+}
+.msg{
+    font-size: 1.5rem;
+    color: #dae4db;
+    text-align: center;
+}
+
+.hide{
+    display: none;
+}
